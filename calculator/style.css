@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(184deg, skyblue,black);
+}
+
+.container {
+    background-color: rgba(166, 233, 255, 50%);
+    box-shadow: 4px 4px 20px 5px #888888;
+    height: 350px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btns {
+    box-shadow: inset 0px 0px 1px 0px #828181;
+    width: 70px;
+    height: 50px;
+    font-weight: 900;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+
+.btns:hover {
+    background-color: #afa6a629;
+}
+
+.btns:active {
+    background-color: #fff;
+
+}
+
+.zero {
+    width: 144px;
+}
+
+.clear {
+    background-color: yellow;
+    color: red;
+    font-size: medium;
+}
+
+.operator {
+    background-color: rgba(0, 251, 255, 0.981);
+    color: rgb(255, 87, 20);
+    font-size: large;
+
+}
+
+.equals-to {
+    background-color: yellow;
+    color: deeppink;
+    font-size: large;
+    
+}
+
+.num {
+    background-color: rgb(201, 222, 244);
+}
+
+#inp input {
+    box-shadow: inset 0px 0px 12px 0px #888888;
+    border: none;
+    width: 285px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: rgba(166, 233, 255, 0.93);
+    padding: 3px;
+    text-align: right;
+    font-size: large;
+    font-weight: 800;
+}
