@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 7 | Replicatoin of the UE download website</title>
+    <style>
+        :root{
+            --bodybg:white;
+        }
+        body {
+           
+            background-color: var(--bodybg);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            align-items: center;
+
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+            font-weight: 500;
+            color: black;
+            margin-right: 70px;
+            
+        }
+
+        .container {
+            margin-top: 80px;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 375px 375px 375px;
+        }
+           
+        .boxes {
+            height: 185.48px;
+            width: 300.8px;
+            background-color: #f9f9f9;
+            margin: 20px;
+
+        }
+
+        .boxes h2 {
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            }
+        .boxes p {
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            }
+
+        .buttons {
+            height: 36.39px;
+            width: 125.02;
+            text-align: center;
+            margin-left:30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-family:'Times New Roman', Times, serif;
+
+        }
+        
+        .button1{
+            background-color: rgba(24, 167, 223, 0.704);
+            
+        }
+        .button1:hover{
+            background-color: rgb(24, 167, 223);
+            cursor: pointer;
+        }
+        
+        .button2{
+            background-color: rgba(59, 196, 59, 0.832);
+        }
+        .button2:hover{
+            background-color: rgb(45, 168, 45);
+            cursor: pointer;
+        }
+
+        .footer-container{
+            background-color: #f2f2f2f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-content ul {
+            color: rgb(6, 0, 0);
+            text-align: left;
+            display: block;
+           }
+
+        .footer-content h3 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            align-items: center;
+           }
+
+           .footer-content ul{
+            list-style: none;
+           }
+           input{
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+           }
+           input::placeholder{
+            color:lightslategray;
+            font-size: medium;
+            font-weight: 300;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic
+           }
+           .button4{
+            width: 300px;
+            height: 30px;
+            background-color: rgb(157, 220, 245);
+            font-size: large;
+            font-weight: 700;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            height: 60px;
+            border-radius: 20px;
+           }
+           .button4:hover{
+            background-color:rgb(100, 195, 233); 
+            /* box-shadow:1px 1px 2px 1px rgb(100, 195, 233);*/color: white ;
+            cursor: pointer;
+           }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/Exercise -7.png" alt="">
+            <ul>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About us </li>
+                <li>Languages</li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="boxes">
+            <h2>ENGLISH</h2>
+            <p>English</p>
+            <button class="buttons button1" >Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>Deutsch</h2>
+            <p>German</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>Italiano</h2>
+            <p>Italian</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>Español</h2>
+            <p>Spanish</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>français</h2>
+            <p>French</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>Português brasileiro</h2>
+            <p>Brazilian Portuguese</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>日本</h2>
+            <p>Japanese</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>한국어</h2>
+            <p>korean</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>中国</h2>
+            <p>Chinese</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+        <div class="boxes">
+            <h2>中國</h2>
+            <p>Traditional Chinese</p>
+            <button class="buttons button1">Download 32 Bit</button>
+            <button class="buttons button2">Download 64 Bit</button>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>What’s your language?</h3>
+            <ul>
+                <li>Code editor (General)</li>
+                <li> Text editor</li>
+                <li> Hex</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li> Unix shell scripts</li>
+                <li> PL/SQL</li>
+                <li> EDI</li>
+                <li> C++</li>
+                <li> PHP</li>
+                <li> XML</li>
+                <li> Markdown</li>
+                <li> SAS</li>
+                <li> Visual Basic</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>What type of user are you?</h3>
+            <ul>
+                <li>Programmer / Developer</li>
+                <li>  Web Developer</li>
+                <li>  Database Manager</li>
+                <li>  System Administrator</li>
+                <li>  Technical Writer</li>
+                <li> Unix shell scripts</li>
+                <li>Editor / Publisher</li>
+                <li>Medical / Pharmaceutical</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>General</h3>
+            <ul>
+                <li>Contact</li>
+                <li> License Agreement (EULA)</li>
+                <li> End of Life Policy  Libraries and Patents</li>
+                <li>Information Policy</li>
+                <li>Privacy Policy</li>
+                <li> Instructions</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Subscribe to Newsletter</h3>
+            <p style="color: black">Get the latest news on new releases, event, and developments.</p>
+                <input type="text" placeholder="Enter email address...">
+              <p><button class="button4">Subscribe</button></p>
+                
+        </div>
+    </footer>
+
+</body>
+
+</html>
