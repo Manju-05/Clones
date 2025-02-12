@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 6 | Replication fo ultra edit Website </title>
+    <style>
+        body {
+            background-color: rgb(34, 33, 33);
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 390px;
+            margin-right: 50px;
+            background-color: rgb(34, 33, 33);
+
+        }
+
+        nav ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        li a:hover {
+            color: rgb(111, 109, 109);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .main-logo {
+            margin-top: 60px;
+            margin-left: 200px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .main-logo-text {
+            font-family: serif;
+            color: white;
+            width: 700px;
+            margin-top: 130px;
+        }
+
+        .UE-side-logo {
+            float: right;
+            margin-top: 60px;
+        }
+
+        .buttons {
+            height: 60px;
+            width: 200px;
+            background: peachpuff;
+            border-radius: 20px;
+            font-size:medium;
+            font-weight: 500;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .buttons:hover {
+            background: rgb(226, 171, 123);
+            cursor: grab;
+            color: whitesmoke;
+        }
+
+        p a {
+            color: white;
+        }
+
+        p a:hover {
+            color: grey;
+        }
+
+        .section-text {
+            text-align: center;
+            color: whitesmoke;
+            text-wrap: wrap;
+        }
+
+        .text-under-section {
+            text-align: center;
+            background-color: yellow;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .section-2 {
+            display: flex;
+            display: wrap;
+            height: 300px;
+        }
+
+        .matter-under-icons {
+            color: white;
+            height: 40px;
+            width: 330px;
+            margin: 20px;
+        }
+
+        .matter-under-icons h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 30px;
+        }
+
+        .matter-under-icons p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 30px;
+        }
+
+        .icon1 {
+            margin-left: 120px;
+        }
+
+        .icon2 {
+            margin-left: 50px;
+        }
+
+        .icon3 {
+            margin-left: 45px;
+        }
+
+        .icon4 {
+            margin-left: 120px;
+        }
+
+        .section-3 {
+            display: flex;
+        }
+        .section-3-content h1{
+            color: rgb(86, 162, 162);
+            text-align: center;
+            font-style: oblique;
+        }
+        .section-3-content p{
+            color: rgba(243, 226, 149, 0.892);
+        text-align:center;
+        }
+       .button3 {
+            margin-left: 450px;
+            margin-bottom: 20px;
+            width: 450px;
+            background-color: rgb(157, 220, 245);
+            font-size: large;
+            font-weight: 700;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            height: 60px;
+            border-radius: 20px;
+            }
+        .button3:hover{
+            background-color:rgb(100, 195, 233); 
+            /* box-shadow:1px 1px 2px 1px rgb(100, 195, 233);*/color: white ; 
+            cursor: pointer;
+        }
+        .footer-container{
+            background-color:rgba(97, 87, 87, 0.078);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-content ul {
+            color: whitesmoke;
+            text-align: left;
+           }
+
+        .footer-content h3 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            align-items: center;
+           }
+
+           .footer-content ul{
+            list-style: none;
+           }
+           input{
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+           }
+           input::placeholder{
+            color:lightslategray;
+            font-size: medium;
+            font-weight: 300;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic
+           }
+           .button4{
+            width: 300px;
+            height: 30px;
+            background-color: rgb(157, 220, 245);
+            font-size: large;
+            font-weight: 700;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            height: 60px;
+            border-radius: 20px;
+           }
+           .button4:hover{
+            background-color:rgb(100, 195, 233); 
+            /* box-shadow:1px 1px 2px 1px rgb(100, 195, 233);*/color: white ;
+            cursor: pointer;
+           }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="images/exercise-6.png" alt="logo">
+            </div>
+
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Language</a>
+                    <!-- <ul>
+                        <li class="sub-menu">Telugu</li>
+                        <li class="sub-menu">Hindi</li>
+                        <li class="sub-menu">English</li>
+                    </ul>
+                 -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="main-logo"><img src="images/exercise-6.png" alt="logo"></div>
+        <div class="main-logo-text">
+            <h1>A powerful and highly configurable text and hex editor with unrivaled support for large files. </h1>
+            <button class="buttons">DOWNLOAD NOW</button>
+            <button class="buttons">BUY NOW</button>
+            <p><a href="https://www.ultraedit.com/products/ultraedit/new-feature-tour/" target="_blank">Read the latest
+                    updates</a>
+        </div>
+        <div class="UE-side-logo">
+            <img src="images/UE-side-logo.webp" alt="UE-side-logo">
+        </div>
+    </main>
+    <section>
+        <div class="section-text">
+            <h1>The multiple-award winning editor year after year</h1>
+        </div>
+        <img src="images/Ex-6 Section.png" alt="Section img">
+        <div class="text-under-section">
+            <h1>The Swiss army knife of text editors. Designed for performance and versatility.</h1>
+        </div>
+    </section>
+    <section class="section-2">
+
+        <div class="matter-under-icons">
+            <img class="icon1" src="images/Ex6-icon-1.png" image from internet">
+            <h2>Unmatched performance on all file sizes.</h2>
+            <p>Leverage UE's powerful features to deal with the largest of projects.</p>
+        </div>
+        <div class="matter-under-icons">
+            <img class="icon2" src="images/Ex6-icons-2.png" alt="">
+            <h2>One license. Three platforms.</h2>
+            <p>Install on Windows, Mac, and Linux with one license.</p>
+        </div>
+        <div class="matter-under-icons">
+            <img class="icon3" src="images/Ex6-icon-3.png" alt="">
+            <h2>3 for 1 licensing</h2>
+            <p>Your personal license is good for up to 3 machines on any combination of platforms..</p>
+        </div>
+        <div class="matter-under-icons">
+            <img class="icon4" src="images/Ex6-icon-4.png" alt="">
+            <h2>Optional Cloud Services (Win only)</h2>
+
+            <p>Sync and share all your settings, files, and code snippets across all your systems in a single click
+            </p>
+        </div>
+    </section>
+    <h1 style="text-align: center;  color: white;
+    font-family: 'Times New Roman', Times, serif;">TESTIMONIALS</h1>
+
+    <section class="section-3">
+        <div class="section-3-content">
+            <h1>
+                The Bugatti of text editors
+            </h1>
+            <p>UltraEdit is like the Bugatti of text editors in a world awash with Fords and Chevys. It does everything
+                well, and it does a lot of everything. There are developers that cram as many features as they can into
+                their software and end up with half-baked (and buggy) results. UltraEdit is feature-rich, and all of it
+                is well done.</p>
+        </div>
+        <div class="section-3-content">
+            <h1>
+                Best PC editing tool that I have ever used
+            </h1>
+            <p>If you need to view files and find out information in them, this is the product for you. You can see
+                tabs, line endings and page breaks. You can switch from ASCII to other format, such as EBCIDIC. You can
+                see individual bytes and even see the text out to the side. This is a perfect editor for viewing the
+                data the way you want it.</p>
+        </div>
+    </section>
+    <button class="button3">Try It Now</button>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>What’s your language?</h3>
+            <ul>
+                <li>Code editor (General)</li>
+                <li> Text editor</li>
+                <li> Hex</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li> Unix shell scripts</li>
+                <li> PL/SQL</li>
+                <li> EDI</li>
+                <li> C++</li>
+                <li> PHP</li>
+                <li> XML</li>
+                <li> Markdown</li>
+                <li> SAS</li>
+                <li> Visual Basic</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>What type of user are you?</h3>
+            <ul>
+                <li>Programmer / Developer</li>
+                <li>  Web Developer</li>
+                <li>  Database Manager</li>
+                <li>  System Administrator</li>
+                <li>  Technical Writer</li>
+                <li> Unix shell scripts</li>
+                <li>Editor / Publisher</li>
+                <li>Medical / Pharmaceutical</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>General</h3>
+            <ul>
+                <li>Contact</li>
+                <li> License Agreement (EULA)</li>
+                <li> End of Life Policy  Libraries and Patents</li>
+                <li>Information Policy</li>
+                <li>Privacy Policy</li>
+                <li> Instructions</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Subscribe to Newsletter</h3>
+            <p style="color: rgb(255, 255, 255);">Get the latest news on new releases, event, and developments.</p>
+                <input type="text" placeholder="Enter email address...">
+              <p><button class="button4">Subscribe</button></p>
+                
+        </div>
+    </footer>
+
+</body>
+
+</html>
